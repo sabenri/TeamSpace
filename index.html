@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -125,7 +125,39 @@
                 New Project
             </button>
         </div>
-        
+
+        <section class="stats-grid" aria-label="workspace summary">
+            <article class="stat-card">
+                <div class="stat-icon blue"><i data-lucide="folder-kanban"></i></div>
+                <p>Total Projects</p>
+                <h2 id="total-projects">0</h2>
+                <span>Projects in your workspace</span>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-icon red"><i data-lucide="list-checks"></i></div>
+                <p>Total Tasks</p>
+                <h2 id="total-projects">0</h2>
+                <span>Task across all projects</span>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-icon green"><i data-lucide="check-circle"></i></div>
+                <p>Completed Tasks</p>
+                <h2 id="completed-tasks">0</h2>
+                <span>Tasks marked as completed</span>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-icon purple"><i data-lucide="user"></i></div>
+                <p>Team Meambers</p>
+                <h2 id="total-meambers">0</h2>
+                <span>People in your workspace</span>
+            </article>
+        </section>
+
+
+
 
     </section>
 
