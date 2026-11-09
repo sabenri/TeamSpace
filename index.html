@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamSpace | Team Dashboard</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="app-layout">
+
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a href="#" class="brand">
+                    <span class="brand-icon">
+                        <i data-lucide="layers"></i>
+                    </span>
+                    <span class="brand-name">TeamSpace</span>
+                </a>
+
+                <button class="icon-button collapse-button"
+                    id="collapse-sidebar"
+                    aria-label="collapse sidebar"
+                    >
+                    <i data-lucide="panel-left-close"></i>
+                </button>
+            </div>
+
+            <div class="workspace-swither">
+                <span class="workspace-icon"><i data-lucide="briefcase-business"></i></span>
+                <span class="workspace-name">Workspace</span>
+                <i data-lucide="chevrons-up-down" class="swither-chevron"></i>
+
+            </div>
+
+            <nav class="sidebar-nav" aria-label="main navigation">
+                <p class="nav-lable">WORK SPACE</p>
+
+                <a href="#overvriew" class="nav-link advice" data-page="overview">
+                    <i data-lucide="layout-dashboard"></i>
+                    <span>Overview</span>
+                </a>
+
+                <a href="#task" class="nav-link" data-page="task">
+                    <i data-lucide="list-checks"></i>
+                    <span>My Tasks</span>
+                    <span class="nav-count">0</span>
+                </a>
+
+                <a href="#projects" class="nav-link" data-page="projects">
+                    <i data-lucide="folder-kanban"></i>
+                    <span>Projects</span>
+                </a>
+
+                <a href="#team" class="nav-link" data-page="team">
+                    <i data-lucide="user"></i>
+                    <span>Team</span>
+                </a>
+
+                <a href="#calender" class="nav-link" data-page="calender">
+                    <i data-lucide="calender-days"></i>
+                    <span>Calender</span>
+                </a>
+
+                <p class="nav-lable nav-lable-spaced">ACTIVITY</p>
+
+                <a href="#activity" class="nav-link" data-page="activity">
+                    <i data-lucide="activity"></i>
+                    <span>Activity</span>
+                </a>
+                <a href="#setting" class="nav-link" data-page="setting">
+                    <i data-lucide="setting"></i>
+                    <span>Settings</span>
+            </nav>
+               
+        </aside>
+<main class=" main-content">
+    <header class="topbar">
+                <div class="topbar-left">
+                    <button class="icon-button mobile-menu-button"
+                    id="mobile-menu-button"
+                    aria-label="open navigation"
+                    >
+                    <i data-lucide="menu"></i>
+                    </button>
+                     <div class="breadcrumb">
+                        <span>Workspace</span>
+                        <i data-lucide="chevrons-right"></i>
+                        <strong id="page-title">Overview</strong>
+                    </div>
+                </div>
+
+                <div class="topbar-actions">
+                     
+                    <button class="icon-button" id="theme-toggle" aria-label="toggle theme">
+
+                    </button>
+                <button class="icon-button" id="notification-button" aria-label="notifications"> 
+                    <i data-lucide="bell"></i>
+                    </button>
+
+                    <button class="Profile-button" id="Profile-button" aria-label="your profile"> 
+                    <i data-lucide="user-round"></i>
+                    </button>
+                </div>
+    </header>
+
+    <section class="Dashboard-content">
+        <div class="welcome-section"> 
+            <div>
+                <p class="eyebrow" id="current-date"></p>
+                <h1> Welcome to TeamSpace</h1>
+                <p class="welcome-description"> Your workspace for organizeing team projects </p>
+            </div>
+
+            <button class="primary-button" id="new-project-button"> 
+                <i data-lucide="plus"></i>
+                New Project
+            </button>
+        </div>
+        
+
+    </section>
+
+</main>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
