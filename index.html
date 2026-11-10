@@ -43,7 +43,7 @@
             <nav class="sidebar-nav" aria-label="main navigation">
                 <p class="nav-lable">WORK SPACE</p>
 
-                <a href="#overvriew" class="nav-link advice" data-page="overview">
+                <a href="#overview" class="nav-link advice" data-page="overview">
                     <i data-lucide="layout-dashboard"></i>
                     <span>Overview</span>
                 </a>
@@ -64,9 +64,9 @@
                     <span>Team</span>
                 </a>
 
-                <a href="#calender" class="nav-link" data-page="calender">
-                    <i data-lucide="calender-days"></i>
-                    <span>Calender</span>
+                <a href="#calendar" class="nav-link" data-page="calendar">
+                    <i data-lucide="calendar-days"></i>
+                    <span>Calendar</span>
                 </a>
 
                 <p class="nav-lable nav-lable-spaced">ACTIVITY</p>
@@ -75,9 +75,10 @@
                     <i data-lucide="activity"></i>
                     <span>Activity</span>
                 </a>
-                <a href="#setting" class="nav-link" data-page="setting">
-                    <i data-lucide="setting"></i>
-                    <span>Settings</span>
+                <a href="#setting" class="nav-link" data-page="settings">
+                    <i data-lucide="settings"></i>
+                    <span>Settings</span> 
+                </a>
             </nav>
                
         </aside>
@@ -112,7 +113,7 @@
                 </div>
     </header>
 
-    <section class="Dashboard-content">
+    <section class="dashboard-content">
         <div class="welcome-section"> 
             <div>
                 <p class="eyebrow" id="current-date"></p>
@@ -137,7 +138,7 @@
             <article class="stat-card">
                 <div class="stat-icon red"><i data-lucide="list-checks"></i></div>
                 <p>Total Tasks</p>
-                <h2 id="total-projects">0</h2>
+                <h2 id="total-tasks">0</h2>
                 <span>Task across all projects</span>
             </article>
 
@@ -156,7 +157,7 @@
             </article>
         </section>
 
-        <div class="Dashboard-grid">
+        <div class="dashboard-grid">
             <section class = "panel projects-panel">
                 <div class="panel-header">
                     <div>
@@ -167,7 +168,7 @@
                 </div>
 
                 <div id="projects-container" class="empty-state">
-                    <div class="empty-icon"><i data-lucide="floder-plus"></i></div>
+                    <div class="empty-icon"><i data-lucide="folder-plus"></i></div>
                     <h3>No projects yet</h3>
                     <p>Create your first project.</p>
                     <button class="secondary-button" id="empty-new-project">
@@ -183,7 +184,7 @@
                         <p> Tasks that need to be done.</p>
                     </div>
 
-                    <button class="text-button" data-page-link="my tasks">
+                    <button class="text-button" data-page-link="tasks">
                         View all
                     </button>
                 </div>
@@ -224,7 +225,7 @@
                     </button>
                 </div>
 
-                <div id="activity-container" class="empty-state compact-empty">
+                <div id="team-container" class="empty-state compact-empty">
                     <div class="empty-icon"><i data-lucide="user-plus"></i></div>
                     <h3>You have no team members</h3>
                     <P>You can collaborate with team members once you add them.</P>
