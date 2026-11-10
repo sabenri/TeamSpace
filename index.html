@@ -156,16 +156,88 @@
             </article>
         </section>
 
+        <div class="Dashboard-grid">
+            <section class = "panel projects-panel">
+                <div class="panel-header">
+                    <div>
+                        <h2>Projects</h2>
+                        <p>Your workspace projects</p>
+                    </div>
+                    <button class="text-button" data-page-link="projects">View all</button>
+                </div>
 
+                <div id="projects-container" class="empty-state">
+                    <div class="empty-icon"><i data-lucide="floder-plus"></i></div>
+                    <h3>No projects yet</h3>
+                    <p>Create your first project.</p>
+                    <button class="secondary-button" id="empty-new-project">
+                        <i data-lucide="plus"></i> create a Project
+                    </button>
+                </div>
+            </section>
 
+            <section class="panel task-panel">
+                <div class="panel-header">
+                    <div>
+                        <h2>Tasks</h2>
+                        <p> Tasks that need to be done.</p>
+                    </div>
 
+                    <button class="text-button" data-page-link="my tasks">
+                        View all
+                    </button>
+                </div>
+
+                <div id="tasks-container" class="empty-state">
+                    <div class="empty-icon"><i data-lucide="clipboard-check"></i></div>
+                    <h3>No tasks yet</h3>
+                    <P> Tasks will appear once added to a project.</P>
+                </div>
+            </section>
+
+            <section class="panel activity-panel">
+                <div class="panel-header">
+                    <div>
+                        <h2>Recent Activity</h2>
+                        <p> Updates from your workspace</p>
+                    </div>
+                     <button class="text-button" data-page-link="activity">
+                        View all
+                    </button>
+                </div>
+
+                <div id="activity-container" class="empty-state compact-empty">
+                    <div class="empty-icon"><i data-lucide="notebook-pen"></i></div>
+                    <h3>No activities</h3>
+                    <P> Workspace updates will appear as you work on projects.</P>
+                </div>
+            </section>
+
+            <section class="panel team-panel">
+                <div class="panel-header">
+                    <div>
+                        <h2>Team members</h2>
+                        <p> People you can collaborate with</p>
+                    </div>
+                     <button class="text-button" data-page-link="team">
+                        View all
+                    </button>
+                </div>
+
+                <div id="activity-container" class="empty-state compact-empty">
+                    <div class="empty-icon"><i data-lucide="user-plus"></i></div>
+                    <h3>You have no team members</h3>
+                    <P>You can collaborate with team members once you add them.</P>
+                </div>
+            </section>
+        </div>
     </section>
-
 </main>
 
         </div>
 
     </div>
-    
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
 </body>
 </html>
