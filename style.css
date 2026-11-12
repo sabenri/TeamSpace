@@ -76,6 +76,48 @@ a:focus-visible {
 
 }
 
+.sidebar.collapsed {
+    width: var(--sidebar-collapsed-width);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sidebar.collapsed .brand-name,
+.sidebar.collapsed .workspace-name,
+.sidebar.collapsed .swither-chevron,
+.sidebar.collapsed .nav-heading,
+.sidebar.collapsed .nav-link span {
+    display: none;
+}
+
+.sidebar.collapsed .brand {
+    justify-content: center;
+}
+
+.sidebar.collapsed .sidebar-header {
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar.collapsed .workspace-swithcher {
+    justify-content: center;
+    padding: 5px;
+}
+
+.sidebar.collapsed .nav-link {
+    justify-content: center;
+    padding: 0;
+}
+
+.sidebar.collapsed .collapse-button {
+    display: inline-flex;
+}
+
+body.sidebar-collapsed .main-content {
+    margin-left: var(--sidebar-collapsed-width);
+}
+
 .collapse-button {
     flex-shrink: 0;
 }
@@ -336,7 +378,7 @@ a:focus-visible {
 .stat-icon {
     width: 35px;
     height: 35px;
-    display: gird;
+    display: grid;
     place-items: center;
     margin: 15px;
     border-radius: 10px;
@@ -469,6 +511,28 @@ a:focus-visible {
 
 .compact-empty {
     min-height: 150px;
+}
+
+.form-group select:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 15px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 25px;
 }
 
 .toast {

@@ -41,14 +41,14 @@
             </div>
 
             <nav class="sidebar-nav" aria-label="main navigation">
-                <p class="nav-lable">WORK SPACE</p>
+                <p class="nav-label">WORK SPACE</p>
 
                 <a href="#overview" class="nav-link advice" data-page="overview">
                     <i data-lucide="layout-dashboard"></i>
                     <span>Overview</span>
                 </a>
 
-                <a href="#task" class="nav-link" data-page="task">
+                <a href="#tasks" class="nav-link" data-page="tasks">
                     <i data-lucide="list-checks"></i>
                     <span>My Tasks</span>
                     <span class="nav-count">0</span>
@@ -107,7 +107,7 @@
                     <i data-lucide="bell"></i>
                     </button>
 
-                    <button class="Profile-button" id="Profile-button" aria-label="your profile"> 
+                    <button class="profile-button" id="profile-button" aria-label="your profile"> 
                     <i data-lucide="user-round"></i>
                     </button>
                 </div>
@@ -151,8 +151,8 @@
 
             <article class="stat-card">
                 <div class="stat-icon purple"><i data-lucide="user"></i></div>
-                <p>Team Meambers</p>
-                <h2 id="total-meambers">0</h2>
+                <p>Team Members</p>
+                <h2 id="total-members">0</h2>
                 <span>People in your workspace</span>
             </article>
         </section>
@@ -234,6 +234,87 @@
         </div>
     </section>
 </main>
+
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="project-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <div>
+                    <h2>Create A New Project</h2>
+                    <p>Add a project to your workspace</p>
+                </div>
+
+                <button 
+                class="icon-button"
+                id="close-project-modal"
+                type="button"
+                aria-label="close modal"
+                >
+                <i data-lucide="X"></i>
+                </button>
+            </div>
+
+            <form id="project-form">
+                <div class="form-group">
+                    <label for="project-name">Project Name</label>
+                    <input type="text"
+                        id="project-name"
+                        placeholder="Enter Project Name"
+                        required
+                        >
+                </div>
+
+                <div class="form-group">
+                    <label for="project-description">Description</label>
+                    <textarea id="project-description"
+                        placeholder="Please Add A Description Of The Project"
+                        rows="3"
+                    ></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="project-start-date">Start Date</label>
+                        <input type="date"
+                            id="project-start-date"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="project-due-date"> Due Date</label>
+                        <input type="date"
+                            id="project-due-date"
+                        >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="project-status">Status</label>
+                    <select id="project-status">
+                        <option value="planning"> Planning</option>
+                        <option value="in-progress"> In Progress</option>
+                        <option value="completed"> Completed</option>
+                    </select>
+                </div>
+
+                <div class="modal-actions">
+                    <button 
+                        type="button"
+                        class="secondary-button"
+                        id="cancel-project"
+                    >
+                    Cancel
+                  </button>
+
+                  <button
+                    type="submit"
+                    class="primary-button"
+                  >
+                  Create Project
+                 </button>
+                </div>
+            </form>
 
         </div>
 
