@@ -167,8 +167,10 @@
                     <button class="text-button" data-page-link="projects">View all</button>
                 </div>
 
-                <div id="projects-container" class="empty-state">
-                    <div class="empty-icon"><i data-lucide="folder-plus"></i></div>
+                <div id="projects-container" class="project-list">
+                    <div class="empty-state"  id="project-empty-state">
+                        <div class="empty-icon"> <i data-lucide="folder-plus"></i>
+                        </div>
                     <h3>No projects yet</h3>
                     <p>Create your first project.</p>
                     <button class="secondary-button" id="empty-new-project">
@@ -232,13 +234,10 @@
                 </div>
             </section>
         </div>
+
+        
     </section>
-</main>
-
-        </div>
-    </div>
-
-    <div class="modal-overlay" id="project-modal">
+  <div class="modal-overlay" id="project-modal">
         <div class="modal">
             <div class="modal-header">
                 <div>
@@ -252,7 +251,7 @@
                 type="button"
                 aria-label="close modal"
                 >
-                <i data-lucide="X"></i>
+                <i data-lucide="x"></i>
                 </button>
             </div>
 
@@ -319,6 +318,11 @@
         </div>
 
     </div>
+
+</main>
+    </div>
+
+  
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
     <script src="https://unpkg.com/lucide@latest"></script>
 <script>
